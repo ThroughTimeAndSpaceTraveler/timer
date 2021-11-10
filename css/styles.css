@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #8e8e8e;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: solid #fff;
+    min-height: 100vh;
+    display: flex;
+}
+
+.timer-controls {
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.timer-button {
+    border: solid yellow;
+    flex: 1;
+}
+
+.input {
+    height: 7em;
+}
+
+.display {
+    border: solid black;
+    width: 100%;
+}
+
+.numbs {
+    width: 50%;
+}
+
+.display-time-left {
+    border: solid red;
+}
+
+.display-end-time {
+    border: solid green;
+
+}
