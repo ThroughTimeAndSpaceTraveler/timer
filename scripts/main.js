@@ -39,7 +39,7 @@ function displayEndTime(timestamp) {
     const end = new Date(timestamp);
     const hour = end.getHours();
     const minutes = end.getMinutes();
-    endTime.textContent = `Whatever ${hour}:${minutes < 10 ? '0' : ''}${minutes}`;
+    endTime.textContent = `WILL BE BACK AT ${hour}:${minutes < 10 ? '0' : ''}${minutes}`;
     // for dumb endTime.textContent = `Whatever ${hour > 12 ? hour - 12}:${minutes}`;
 } 
 
@@ -48,7 +48,7 @@ function startTimer() {
     timer(seconds)
 }
 
-buttons.forEach(button => button,addEventListener('click', startTimer));
+buttons.forEach(button => button.addEventListener('click', startTimer));
 document.customForm.addEventListener('submit', function(e) {
     e.preventDefault();
     const mins = this.minutes.value;
